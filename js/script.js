@@ -18,5 +18,11 @@ $(document).ready(function () {
       }else{
         $('#submitBtn').attr('disabled','disabled');
       }
-   })
+   });
+
+   function blinkText() { 
+     $('.blink').fadeOut(500);
+     $('.blink').fadeIn(500);
+    }
+    setInterval(blinkText,1000);
 });
