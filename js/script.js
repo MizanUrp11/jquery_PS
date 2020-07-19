@@ -31,4 +31,10 @@ $(document).ready(function () {
     window.print();
     return false;
   });
+
+  var maxLength = 15;
+  $("#textarea").keyup(function () {
+    var textLen = maxLength - $(this).val().length;
+    $("#rchars").text(textLen);
+  });
 });
