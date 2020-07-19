@@ -12,17 +12,17 @@ $(document).ready(function () {
 
   //Disable/enable the form submit button
 
-  $('#accept').click(function () { 
-      if($('#submitBtn').is(':disabled')){
-          $('#submitBtn').removeAttr('disabled')
-      }else{
-        $('#submitBtn').attr('disabled','disabled');
-      }
-   });
-
-   function blinkText() { 
-     $('.blink').fadeOut(500);
-     $('.blink').fadeIn(500);
+  $("#accept").click(function () {
+    if ($("#submitBtn").is(":disabled")) {
+      $("#submitBtn").removeAttr("disabled");
+    } else {
+      $("#submitBtn").attr("disabled", "disabled");
     }
-    setInterval(blinkText,1000);
+  });
+
+  function blinkText() {
+    $(".blink").fadeOut(500);
+    $(".blink").fadeIn(500);
+  }
+  setInterval(blinkText, 1000);
 });
