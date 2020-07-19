@@ -25,4 +25,6 @@ $(document).ready(function () {
     $(".blink").fadeIn(500);
   }
   setInterval(blinkText, 1000);
+
+  $("tr:odd").addClass("zebra");
 });
