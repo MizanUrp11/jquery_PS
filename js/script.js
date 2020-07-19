@@ -27,4 +27,8 @@ $(document).ready(function () {
   setInterval(blinkText, 1000);
 
   $("tr:odd").addClass("zebra");
+  $("a.printPage").click(function () {
+    window.print();
+    return false;
+  });
 });
