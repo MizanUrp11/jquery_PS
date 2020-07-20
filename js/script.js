@@ -82,3 +82,9 @@ $(document).ready(function () {
 function new_element() {
   $("#header ul").append("<li>Java</li>");
 }
+
+function Remove_options() {
+  $("#myColor")
+    .empty()
+    .append('<option selected="selected" value="test">White</option>');
+}
