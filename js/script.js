@@ -58,3 +58,11 @@ function new_div() {
     $("body").append($div);
   });
   }
+
+function moveButton(elem) { 
+  if($(elem).parent().attr("id") == "nonselected"){
+    $(elem).detach().appendTo("#selected");
+  }else{
+    $(elem).detach().appendTo("#nonselected");
+  }
+ }
