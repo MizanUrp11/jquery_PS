@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="header">
-        <ul>
-            <li><a href="https://www.w3resource.com/python/python-tutorial.php">Python</a></li>
-            <li><a href="https://www.w3resource.com/python/python-tutorial.php">PHP</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="https://www.w3resource.com/python/python-tutorial.php"
+            >Python</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3resource.com/python/python-tutorial.php"
+            >PHP</a
+          >
+        </li>
+      </ul>
     </div>
-    <input type="button" value="Click to add new list" onclick="new_element()">
+    <input
+      type="button"
+      value="Click to add new list"
+      onclick="new_element()"
+    />
 
-    <select id="divSelect"></select><br><br>
+    <select id="divSelect"></select
+    ><br /><br />
 
-<div style="display: flex;">
-<div id="nonselected">
-    <button id="btnDefault" onclick="moveButton(this)" type="button">Button 1</button>
-    <button id="btnPrimary" onclick="moveButton(this)" type="button">Button 2</button>
-    <button id="btnDanger" onclick="moveButton(this)" type="button">Button 3</button>
-</div>
-<div id="selected"></div>
-</div>
+    <div style="display: flex;">
+      <div id="nonselected">
+        <button id="btnDefault" onclick="moveButton(this)" type="button">
+          Button 1
+        </button>
+        <button id="btnPrimary" onclick="moveButton(this)" type="button">
+          Button 2
+        </button>
+        <button id="btnDanger" onclick="moveButton(this)" type="button">
+          Button 3
+        </button>
+      </div>
+      <div id="selected"></div>
+    </div>
 
     <h4>Add div on click event</h4>
-    <input type="button" value="Click to add new division" onclick="new_div()" />
+    <input
+      type="button"
+      value="Click to add new division"
+      onclick="new_div()"
+    />
     <p>PHP Excercise</p>
     <p>Python Excercise</p>
     <p>Java Excercise</p>
     <form>
-        <label>
-            Maximum 15 Characters
-        </label>
-        <textarea id="textarea" maxlength="15"></textarea>
-        <span id="rchars">15</span> Characters remaining.
+      <label>
+        Maximum 15 Characters
+      </label>
+      <textarea id="textarea" maxlength="15"></textarea>
+      <span id="rchars">15</span> Characters remaining.
     </form>
-<a href="#" class="printPage">Print</a>
+    <a href="#" class="printPage">Print</a>
     <div class="table_style">
-        <table>
-            <tr>
-                <th>Student Name</th>
-                <th>Marks in Science</th>
-            </tr>
-            <tr>
-                <td>Janet</td>
-                <td>85.00</td>
-            </tr>
-            <tr>
-                <td>David</td>
-                <td>92.00</td>
-            </tr>
-            <tr>
-                <td>Arthur</td>
-                <td>79.00</td>
-            </tr>
-            <tr>
-                <td>Bill</td>
-                <td>82.00</td>
-            </tr>
-        </table>
-        </div>
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>Marks in Science</th>
+        </tr>
+        <tr>
+          <td>Janet</td>
+          <td>85.00</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>92.00</td>
+        </tr>
+        <tr>
+          <td>Arthur</td>
+          <td>79.00</td>
+        </tr>
+        <tr>
+          <td>Bill</td>
+          <td>82.00</td>
+        </tr>
+      </table>
+    </div>
 
     <p>jquery <span class="blink">Blink</span> and solution</p>
 
-    <input type="checkbox" name="accept" id="accept" value="y">
-    <label for="accept">I accept </label><br>
-    <input type="submit" value="submit" id="submitBtn" disabled>
+    <input type="checkbox" name="accept" id="accept" value="y" />
+    <label for="accept">I accept </label><br />
+    <input type="submit" value="submit" id="submitBtn" disabled />
 
     <!-- Fix broken images automatically -->
     <a href="https://www.w3resource.com">
-        <img src="https://www.w3resource.com/images/w3resource-logo.png" onerror="$(this).hide();">
+      <img
+        src="https://www.w3resource.com/images/w3resource-logo.png"
+        onerror="$(this).hide();"
+      />
     </a>
 
-
     <p>jquery</p>
     <p>jquery</p>
     <p>jquery</p>
@@ -113,8 +136,6 @@
     <p>jquery</p>
     <p>jquery</p>
     <p>jquery</p>
-    <a href='#top'>Go Top</a>
-
-</body>
-
+    <a href="#top">Go Top</a>
+  </body>
 </html>

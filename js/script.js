@@ -38,45 +38,47 @@ $(document).ready(function () {
     $("#rchars").text(textLen);
   });
 
-  $('p').each(function(){
+  $("p").each(function () {
     var pdata = $(this);
-    pdata.html( pdata.text().replace(/(^\w+)/,'<strong>$1</strong>') );
+    pdata.html(pdata.text().replace(/(^\w+)/, "<strong>$1</strong>"));
   });
 });
 
 function new_div() {
-  $(document).ready(function() {
+  $(document).ready(function () {
     var test = {
       id: "div",
       class: "divclass",
       css: {
-        "color": "Green"
-      }
+        color: "Green",
+      },
     };
     var $div = $("<div>", test);
     $div.html("New Division");
     $("body").append($div);
   });
-  }
+}
 
-function moveButton(elem) { 
-  if($(elem).parent().attr("id") == "nonselected"){
+function moveButton(elem) {
+  if ($(elem).parent().attr("id") == "nonselected") {
     $(elem).detach().appendTo("#selected");
-  }else{
+  } else {
     $(elem).detach().appendTo("#nonselected");
   }
- }
+}
 
 $(document).ready(function () {
-  var colors = { "color1": "Red", "color2": "Green", 'color3': "Blue" };
-  $.each(colors,function (key,value) { 
-    $("#divSelect").append($("<option/>",{
-      value: key,
-      text: value
-    }))
-   })
+  var colors = { color1: "Red", color2: "Green", color3: "Blue" };
+  $.each(colors, function (key, value) {
+    $("#divSelect").append(
+      $("<option/>", {
+        value: key,
+        text: value,
+      })
+    );
+  });
 });
 
-function new_element() { 
+function new_element() {
   $("#header ul").append("<li>Java</li>");
- }
+}
