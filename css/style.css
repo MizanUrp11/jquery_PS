@@ -18,7 +18,7 @@ table tr th {
 .zebra {
   background-color: #ff0066;
 }
-#nonselected{
+#nonselected {
   /* position: absolute; */
   top: 10px;
   left: 10px;
@@ -30,7 +30,7 @@ table tr th {
   border-color: #000;
   padding: 10px;
 }
-#selected{
+#selected {
   /* position: absolute; */
   top: 10px;
   left: 200px;
@@ -41,4 +41,8 @@ table tr th {
   border-style: dotted;
   border-color: #000;
   padding: 10px;
+}
+
+#underLine span {
+  text-decoration: underline;
 }

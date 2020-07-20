@@ -88,3 +88,21 @@ function Remove_options() {
     .empty()
     .append('<option selected="selected" value="test">White</option>');
 }
+
+$(document).ready(function () {
+  $("#underLine").each(function () {
+    var text_words = $(this).text().split(" ");
+
+    $(this)
+      .empty()
+      .html(function () {
+        for (i = 0; i < text_words.length; i++) {
+          if (i === 0) {
+            $(this).append("<span>" + text_words[i] + "</span>");
+          } else {
+            $(this).append(" <span>" + text_words[i] + "</span>");
+          }
+        }
+      });
+  });
+});
