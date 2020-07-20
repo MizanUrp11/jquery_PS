@@ -43,3 +43,18 @@ $(document).ready(function () {
     pdata.html( pdata.text().replace(/(^\w+)/,'<strong>$1</strong>') );
   });
 });
+
+function new_div() {
+  $(document).ready(function() {
+    var test = {
+      id: "div",
+      class: "divclass",
+      css: {
+        "color": "Green"
+      }
+    };
+    var $div = $("<div>", test);
+    $div.html("New Division");
+    $("body").append($div);
+  });
+  }
