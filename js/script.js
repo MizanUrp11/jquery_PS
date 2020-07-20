@@ -37,4 +37,9 @@ $(document).ready(function () {
     var textLen = maxLength - $(this).val().length;
     $("#rchars").text(textLen);
   });
+
+  $('p').each(function(){
+    var pdata = $(this);
+    pdata.html( pdata.text().replace(/(^\w+)/,'<strong>$1</strong>') );
+  });
 });
