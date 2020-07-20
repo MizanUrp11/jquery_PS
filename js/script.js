@@ -106,3 +106,10 @@ $(document).ready(function () {
       });
   });
 });
+
+$(document).ready(function () {
+  $("input").keyup(function () {
+    var tvalue = $(this).val();
+    $("#viewOutput").empty().append(tvalue);
+  });
+});
