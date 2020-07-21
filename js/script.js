@@ -121,3 +121,13 @@ function removeCssClass() {
 function remove_style() {
   $("#myInput").css("border", "0");
 }
+
+$(document).ready(function () {
+  $(document).on("contextmenu", ".element", function () {
+    $("#result").text("Right Mouse Clicked!");
+    return false;
+  });
+  $(document).on("click", ".element", function () {
+    $("#result").text("Left Mouse Clicked!");
+  });
+});
