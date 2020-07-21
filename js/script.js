@@ -113,3 +113,7 @@ $(document).ready(function () {
     $("#viewOutput").empty().append(tvalue);
   });
 });
+
+function removeCssClass() {
+  $("#cssClasses").removeClass();
+}
