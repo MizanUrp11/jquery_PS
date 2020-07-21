@@ -56,3 +56,9 @@ p.large{
   font-size: 200%;
 }
 
+h1#myInput{
+  margin: 10px 0;
+  padding: 0 5px;
+  font-size: 2em;
+  border: 2px double green;
+

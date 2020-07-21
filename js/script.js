@@ -117,3 +117,7 @@ $(document).ready(function () {
 function removeCssClass() {
   $("#cssClasses").removeClass();
 }
+
+function remove_style () { 
+  $('#myInput').css('border','0');
+ }
